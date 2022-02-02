@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <div class="pinkbox" >
+                <!-- 注册 -->
+                <div class="signup nodisplay">
+                    <div class="login_header" >
+                        <h1>Register</h1>
+                    </div>
+                    
+                    <div class="login_body">
+                        <input type="text" name="username" placeholder="用户名">
+                        <span>* <?php echo $usernameErr;?></span>
+                        <input type="password" name="password1" placeholder="密码">
+                        <span class="error">* <?php echo $password1Err;?></span>
+                        <input type="text" name="email" placeholder="Email">
+                        <span class="error">* <?php echo $emailErr;?></span>
+                    </div>
+                    <div class="login_submit" >
+                    <input type="submit" name="submit" value="注册"> </span>
+                    
+                    </div>
+                    <div class="login_text">
+                        <input type="checkbox" checked="checked" style="margin-right: 10px">
+                        我已阅读并同意
+                        <a href="#"><ins>《 须知 》</ins></a>
+                    </div>
+                </div>
+                <!-- 登录 -->
+                <div class="signin">
+                    <div class="login_header">
+                      <h1>Sign In</h1>  
+                    </div>
+                    <div class="login_body"> 
+                        <input type="text" name="username" placeholder="用户名">
+                        <span class="error">* <?php echo $usernameErr;?> </span>
+                        <input type="password" name="password1" placeholder="密码">
+                        <span class="error">* <?php echo $password1Err;?></span>
+                    </div>
+                    <div class="login_submit" >
+                    <input type="submit" name="submit" value="登录" class="buttom-submit"> </span>
+                    </div>
+                </div>
+            </div>
+        <div class="leftbox">
+            <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
+            <p class="desc">Pick your perfect <span>bouquet</span></p>
+            <img class="flower smaller" src="https://hbimg.huabanimg.com/c09305167a883e60179a45374df73252304001359acca-W3qbYm_fw658/format/webp" />
+            <p class="account">Have an account?</p>
+            <button class="button" id="signin">点击登录</button>
+          </div>
+      
+          <div class="rightbox">
+            <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
+            <p class="desc">Pick your perfect <span>bouquet</span></p>
+            <img class="flower" src="https://hbimg.huabanimg.com/b28be92c8198975a74ad656eba00b352c9b9e589819af-lDXUAS_fw658/format/webp" />
+            <p class="account">Don't have an account?</p>
+            <button class="button" id="signup">点击注册</button>
+          </div>
+      </div>
+    </div>
+</body>
+</html>

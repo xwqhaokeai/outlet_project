@@ -1,19 +1,19 @@
 <template>
-  <div id="app">
-    
-  </div>
+  <Login/>
 </template>
 
 <script>
-import login from 'login.vue'
+import Login from './components/login.vue';
+
 export default {
   name: 'App',
+
   components: {
-    login,
-  }
-}
+    Login,
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
-
-<style>
-
-</style>
